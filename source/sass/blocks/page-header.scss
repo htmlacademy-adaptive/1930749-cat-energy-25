@@ -1,0 +1,35 @@
+.page-header {
+  padding: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+// .page-header__wrapper {}
+
+
+// .logo{}
+// .logo__image{}
+
+// .main-nav {
+// }
+// .main-nav__toggle{}
+// .main-nav__wrapper{}
+
+.main-nav__list {
+  @include list-style;
+}
+
+// .main-nav__item{}
+
+.main-nav__link {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+// .main-nav__item--active {
+//  border-bottom: 2px solid #68B738 ;
+// }
