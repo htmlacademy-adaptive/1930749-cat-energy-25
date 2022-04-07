@@ -1,6 +1,28 @@
-.field-contacts{}
-.field-contacts__legend{}
-.field-contacts__list{}
-.field-contacts__item{}
-.field-contacts__label{}
-.field-contacts__input{}
+.field-contacts {
+  border: none;
+  border-top: 2px solid #68b738;
+}
+
+.field-contacts__legend {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.field-contacts__list {
+  @include list-style;
+}
+
+// .field-contacts__item{}
+
+.field-contacts__label {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field-contacts__input {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}

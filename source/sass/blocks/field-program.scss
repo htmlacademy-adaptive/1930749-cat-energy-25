@@ -1,5 +1,19 @@
-.field-program{}
-.field-program__list{}
-.field-program__item{}
-.field-program__label{}
-.field-program__input{}
+.field-program {
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
+.field-program__list {
+  @include list-style;
+}
+
+// .field-program__item{}
+
+.field-program__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+// .field-program__input{}

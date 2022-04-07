@@ -1,5 +1,21 @@
-.field-personal{}
-.field-personal__list{}
-.field-personal__item{}
-.field-personal__label{}
-.field-personal__input{}
+.field-personal {
+  border: none;
+}
+
+.field-personal__list {
+  @include list-style;
+}
+
+// .field-personal__item{}
+.field-personal__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field-personal__input {
+  border: 1px solid #e7e7e7;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}

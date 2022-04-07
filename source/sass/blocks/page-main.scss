@@ -1,15 +1,19 @@
 // .page-main{}
 // .page-main{}
-// .page-main__wrapper{}
+
+.page-main__wrapper {
+  padding: 20px;
+}
 
 .page-main__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  border-bottom: 1px solid #ebebeb;
 }
 
-// .page-main__text{}
+.page-main__text {
+  text-transform: uppercase;
+}
 
 // .page-main__form{}
 
