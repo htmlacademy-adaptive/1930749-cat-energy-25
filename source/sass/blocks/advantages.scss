@@ -1,0 +1,29 @@
+.advantages {
+  padding: 20px;
+}
+
+// .advantages__wrapper{}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list {
+  @include list-style;
+}
+
+// .advantages__item{}
+
+.advantages__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+// .advantages__item--benefit{}
+// .advantages__item--convenience{}
+// .advantages__item--comfort{}
+// .advantages__item--time{}
