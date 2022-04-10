@@ -1,12 +1,13 @@
-html {
+.page {
   height: 100%;
 }
 
-body {
+.page__body {
+  min-width: 320px;
+  background-color: #ffffff;
+  color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  background-color: #ffffff;
-  color: #000000;
   margin: 0;
 }

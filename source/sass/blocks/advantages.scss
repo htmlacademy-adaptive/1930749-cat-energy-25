@@ -1,13 +1,13 @@
 .advantages {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 // .advantages__wrapper{}
 
 .advantages__title {
   font-size: 36px;
-  line-height: 40px;
   font-weight: 400;
+  line-height: 40px;
   margin: 0;
   padding: 0;
 }
@@ -19,8 +19,8 @@
 // .advantages__item{}
 
 .advantages__description {
-  font-family: "Arial", sans-serif;
   color: #444444;
+  font-family: "Arial", sans-serif;
 }
 
 // .advantages__item--benefit{}
