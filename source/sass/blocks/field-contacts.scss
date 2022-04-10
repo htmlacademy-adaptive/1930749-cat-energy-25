@@ -1,6 +1,6 @@
 .field-contacts {
   border: none;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid $basic-green;
 }
 
 .field-contacts__legend {
@@ -18,11 +18,11 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $basic-grey-text;
 }
 
 .field-contacts__input {
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $basic-grey-text;
 }

@@ -3,7 +3,7 @@
 }
 
 .promotion__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgba($color: $basic-green, $alpha: 0.85);
 }
 
 .promotion__image {
@@ -14,5 +14,5 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic-white;
 }
