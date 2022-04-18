@@ -1,44 +1,81 @@
-.promo {
-  background-color: rgba(104, 183, 56, 0.85);
-}
+//.promo {
+//}
 
 .promo__wrapper {
-  padding: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+    url("../../img/background-desktop.jpg") center no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: #ffffff;
+  color: $basic-white;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
 }
 
 .promo__slogan {
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+  }
 }
 
 // .promo__image{}
 
-.promo__background {
-  opacity: 0.2;
-}
-
-.promo__program {
-  width: 280px;
-  height: 40px;
-  background-color: #68b738;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 44px;
-}
+//.promo__program {
+//}
 
 .promo__link {
   text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    height: 54px;
+  }
 }

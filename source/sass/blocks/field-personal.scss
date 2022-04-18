@@ -10,12 +10,12 @@
 .field-personal__label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $basic-grey-text;
 }
 
 .field-personal__input {
-  border: 1px solid #e7e7e7;
+  border: 1px solid $special-input;
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $basic-grey-text;
 }

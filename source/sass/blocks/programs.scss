@@ -1,5 +1,13 @@
 .programs {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 71px 110px;
+  }
 }
 
 // .programs__wrapper {
@@ -7,12 +15,34 @@
 
 .programs__list {
   @include list-style;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $basic-grey;
   padding: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 59px 52px;
+  }
 }
 
 .programs__title {
@@ -20,14 +50,36 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
-  border-bottom: 1px solid #d9d9d9;
+  color: $basic-grey-text;
+  border-bottom: 1px solid $special-mobile;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+  }
 }
 
 .programs__link {
@@ -35,7 +87,17 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 // .programs__item--weight-loss{}

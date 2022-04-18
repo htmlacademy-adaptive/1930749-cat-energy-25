@@ -2,6 +2,8 @@
 
 .page-footer__contacts {
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 // .contacts{}
@@ -10,8 +12,9 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $special-black;
   font-weight: 400;
+  margin: 0;
 }
 
 .contacts__address {
@@ -19,7 +22,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $basic-grey-text;
 }
 // .contacts__city{}
 // .page-footer__map{}
@@ -27,23 +30,45 @@
 // .map__image{}
 
 .page-footer__info {
-  padding: 20px;
+  height: 236px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 147px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 149px;
+    flex-direction: row;
+  }
 }
 
 // .info{}
 
 .page-footer__logo {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $special-mobile;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer__social {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $special-mobile;
 }
 
-// .social{}
+//.social {
+
+//}
 
 .social__list {
   @include list-style;
+  display: flex;
+  justify-content: space-between;
 }
 // .social__item{}
 // .social__link{}
@@ -55,5 +80,5 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $basic-grey-text;
 }
