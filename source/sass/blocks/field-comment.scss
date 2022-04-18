@@ -1,11 +1,5 @@
 .field-comment {
   border: none;
-  border-top: 2px solid $basic-green;
-}
-
-.field-comment__legend {
-  font-size: 24px;
-  line-height: 26px;
 }
 
 // .field-comment__label{}
@@ -16,4 +10,12 @@
   text-transform: uppercase;
   color: $basic-grey-text;
   line-height: 18px;
+  width: 100%;
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+  }
+
+  //@media (min-width: $desktop-width) {}
 }

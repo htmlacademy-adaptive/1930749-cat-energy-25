@@ -1,9 +1,6 @@
 .promotion {
-  padding: 0 20px;
-}
-
-.promotion__wrapper {
   background-color: rgba($color: $basic-green, $alpha: 0.85);
+  position: relative;
 }
 
 .promotion__image {
@@ -15,4 +12,9 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  width: 161px;
+  position: absolute;
+  bottom: 43px;
+  left: 58px;
+  text-align: center;
 }

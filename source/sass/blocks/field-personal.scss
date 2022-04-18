@@ -6,7 +6,18 @@
   @include list-style;
 }
 
-// .field-personal__item{}
+.field-personal__item {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
 .field-personal__label {
   font-size: 16px;
   text-transform: uppercase;

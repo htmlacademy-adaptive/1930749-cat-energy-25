@@ -2,7 +2,7 @@
 // .page-main{}
 
 .page-main__wrapper {
-  padding: 0 20px;
+  @include wrapper;
 }
 
 .page-main__title {
@@ -15,4 +15,6 @@
   text-transform: uppercase;
 }
 
-// .page-main__form{}
+.page-main__wrapper-form {
+  @include wrapper-form;
+}

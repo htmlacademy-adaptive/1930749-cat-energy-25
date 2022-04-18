@@ -1,14 +1,14 @@
 .example {
+  @include wrapper;
   background-color: $special-example;
-  padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 30px 59px 30px;
+    //padding: 43px 30px 59px 30px;
     border-top: 1px solid $tablet-border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 68px 110px;
+    //padding: 0 110px 68px 110px;
   }
 }
 

@@ -2,13 +2,31 @@
   border: none;
   border-bottom: 1px solid $special-mobile;
   border-top: 1px solid $special-mobile;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-input;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .field-program__list {
   @include list-style;
+  padding: 22px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 25px 28px;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
-// .field-program__item{}
+.field-program__item:not(:last-child) {
+  margin-bottom: 12px;
+}
 
 .field-program__label {
   font-size: 16px;

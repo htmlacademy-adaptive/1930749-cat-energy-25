@@ -2,20 +2,12 @@
 //}
 
 .promo__wrapper {
-  padding: 0 20px;
+  @include wrapper;
   display: flex;
   flex-direction: column;
   height: 480px;
   background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
     url("../../img/background-desktop.jpg") center no-repeat;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
 }
 
 .promo__title {

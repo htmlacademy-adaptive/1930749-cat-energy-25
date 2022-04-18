@@ -1,12 +1,12 @@
 .programs {
-  padding: 20px;
+  @include wrapper;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px;
+    //padding: 45px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 110px 71px 110px;
+    //padding: 82px 110px 71px 110px;
   }
 }
 

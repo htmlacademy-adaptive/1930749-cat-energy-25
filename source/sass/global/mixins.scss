@@ -3,3 +3,27 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin wrapper() {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+@mixin wrapper-form() {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 65px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
