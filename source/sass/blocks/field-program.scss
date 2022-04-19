@@ -7,10 +7,8 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $special-input;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
+  //@media (min-width: $desktop-width) {
+  //}
 }
 
 .field-program__list {
@@ -20,8 +18,7 @@
   @media (min-width: $tablet-width) {
     padding: 25px 0 25px 28px;
   }
-
-  @media (min-width: $desktop-width) {}
+  //@media (min-width: $desktop-width) {}
 }
 
 .field-program__item:not(:last-child) {
