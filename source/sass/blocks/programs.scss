@@ -1,13 +1,5 @@
 .programs {
   @include wrapper;
-
-  @media (min-width: $tablet-width) {
-    //padding: 45px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //padding: 82px 110px 71px 110px;
-  }
 }
 
 // .programs__wrapper {
