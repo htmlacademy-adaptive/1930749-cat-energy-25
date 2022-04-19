@@ -38,6 +38,17 @@
   color: $special-black;
   font-weight: 400;
   margin: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 164px;
+  }
 }
 
 .contacts__address {
@@ -46,6 +57,21 @@
   font-size: 14px;
   line-height: 20px;
   color: $basic-grey-text;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 // .contacts__city{}
 // .page-footer__map{}
@@ -88,9 +114,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 94px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     border: none;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +131,10 @@
   @include list-style;
   border-bottom: 1px solid $special-mobile;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -114,8 +146,18 @@
 }
 
 //.social {
+
 //}
-// .social__item{}
+
+.social__item {
+  &:nth-child(1) {
+    padding-right: 26px;
+  }
+
+  &:nth-child(2) {
+    padding-right: 30px;
+  }
+}
 // .social__link{}
 
 .page-footer__copyright {
@@ -124,6 +166,23 @@
   font-size: 16px;
   line-height: 18px;
   color: $basic-grey-text;
+  height: 78px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  //@media (min-width: $desktop-width) {
+
+  //}
 }
 
-// .copyright{}
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
+}

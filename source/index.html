@@ -26,7 +26,7 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -67,23 +67,13 @@
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="catalog.html">Каталог slim
-              <svg width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#000" stroke-width="2" d="M0 6h18" />
-                <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
-              </svg>
-            </a>
+            <a class="programs__link" href="catalog.html">Каталог slim</a>
           </li>
           <li class="programs__item programs__item--weight-gain">
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="catalog.html">Каталог pro
-              <svg width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#000" stroke-width="2" d="M0 6h18" />
-                <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
-              </svg>
-            </a>
+            <a class="programs__link" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -119,11 +109,11 @@
           <ul class="example__list">
             <li class="example__item">
               <b class="example__number">5 КГ</b>
-              <p class="example__description">Снижение веса</p>
+              <p class="example__description">снижение веса</p>
             </li>
             <li class="example__item">
               <b class="example__number">60 ДНЕЙ</b>
-              <p class="example__description">Затрачено времени</p>
+              <p class="example__description">затрачено времени</p>
             </li>
           </ul>
           <p class="example__price">Затраты на питание:
@@ -135,11 +125,12 @@
           <img class="example__slider-image" src="img/fat-cat.png" width="280" height="232"
             alt="Толстый кот,фотография до похудения.">
           <div class="example__range">
+            <button class="example__button button-before">Было</button>
             <div class="example__range-scale">
-              <button class="example__button button-before">Было</button>
-              <input class="example__range-bar" type="range">
-              <button class="example__button button-after">Стало</button>
+              <div class="example__range-bar"></div>
+              <div class="example__range-toggle"></div>
             </div>
+            <button class="example__button button-after">Стало</button>
           </div>
         </div>
       </div>
@@ -220,6 +211,7 @@
         </a>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
