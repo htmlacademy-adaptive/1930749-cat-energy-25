@@ -21,16 +21,15 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 
   //@media (min-width: $desktop-width) {
-
   //}
 }
 
@@ -50,6 +49,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    min-height: 280px;
   }
 }
 
@@ -152,8 +152,3 @@
 
   //}
 }
-
-// .advantages__item--benefit{}
-// .advantages__item--convenience{}
-// .advantages__item--comfort{}
-// .advantages__item--time{}

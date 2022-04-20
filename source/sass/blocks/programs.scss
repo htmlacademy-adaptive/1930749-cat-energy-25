@@ -53,6 +53,13 @@
       left: 65%;
       top: 92px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   &--weight-loss {
@@ -74,6 +81,14 @@
         height: 194px;
         left: 67%;
         top: 81px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../../img/icons/weight-loss-desktop.svg");
+        width: 70px;
+        height: 97px;
+        left: 67px;
+        top: 41px;
       }
     }
   }
@@ -98,6 +113,14 @@
         height: 112px;
         left: 60%;
         top: 135px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../../img/icons/weight-gain-desktop.svg");
+        width: 134px;
+        height: 56px;
+        left: 33px;
+        top: 67px;
       }
     }
   }
@@ -128,6 +151,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
+    padding-top: 36px;
   }
 }
 
@@ -151,7 +175,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 39px 0 27px 0;
+    padding: 73px 0 27px 0;
     width: 470px;
   }
 }
@@ -175,20 +199,17 @@
     height: 12px;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 10px;
       left: 132px;
     }
+
+    //@media (min-width: $desktop-width) {
+    //}
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0;
   }
-
-  //@media (min-width: $desktop-width) {
-
-  //}
 }
-
-// .programs__item--weight-loss{}
-// .programs__item--weight-gain{}
