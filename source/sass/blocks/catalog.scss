@@ -1,48 +1,47 @@
-// .catalog{}
+.catalog {
+  @media (min-width: $tablet-width) {
+    @include wrapper;
+  }
+}
 
 .catalog__list {
   @include list-style;
-  border-top: 1px solid $special-grey-2;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 141px 60px;
-    border: none;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 143px 80px;
-    border: none;
+    margin-bottom: 50px;
   }
 }
 
 .catalog__item {
   border-bottom: 1px solid $special-grey-2;
-  padding: 19px 0 25px 0;
+  padding: 19px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
+    height: 430px;
     border: none;
     background-color: $basic-grey;
     padding: 0 37px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
-    background-color: $basic-grey;
     padding: 0 38px 40px 39px;
   }
 }
 
 .catalog__item--more {
   @media (min-width: $tablet-width) {
-    background-color: $basic-white;
-    border: 2px solid $basic-grey;
-  }
-
-  @media (min-width: $desktop-width) {
     background-color: $basic-white;
     border: 2px solid $basic-grey;
   }
@@ -61,6 +60,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $special-black;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 49px;
+    padding-bottom: 23px;
+    text-align: center;
+  }
 }
 
 .catalog__text-more {
@@ -68,6 +79,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey-text;
+  margin: 0;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 87px;
+    text-align: center;
+  }
 }
 
 .catalog__link-more {
@@ -78,10 +99,9 @@
 .catalog__button-more {
   border: none;
   background-color: $basic-white;
-}
-
-.catalog__product-card {
-  display: flex;
+  //@media (min-width: $tablet-width) {
+  //}
+  //@media (min-width: $desktop-width) {}
 }
 
 .catalog__button {
