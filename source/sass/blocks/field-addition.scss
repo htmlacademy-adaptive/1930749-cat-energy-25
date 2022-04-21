@@ -1,5 +1,14 @@
 .field-addition {
   border: none;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.field-addition__wrapper {
+  @include wrapper-form;
 }
 
 .field-addition__list {
@@ -14,18 +23,73 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
 .field-addition__item {
+  height: 30px;
+  display: flex;
+  align-items: center;
   margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .field-addition__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    top: -6px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 // .field-addition__input{}
+
+.field-addition__input:checked + .field-addition__label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 9px;
+  border-left: 2px solid $basic-green;
+  border-bottom: 2px solid $basic-green;
+  transform: rotate(-45deg);
+  top: 2px;
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 12px;
+    top: 2px;
+    left: 8px;
+  }
+}

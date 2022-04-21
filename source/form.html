@@ -26,7 +26,7 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -48,27 +48,25 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper-form">
-      <h1 class="page-main__title">Подбор программы</h1>
+      <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__wrapper">
+        <div class="form__field--wrapper">
           <div class="form__field field-personal">
             <h2 class="visually-hidden">Личные данные</h2>
             <ul class="field-personal__list">
               <li class="field-personal__item">
-                <label class="field-personal__label">ИМЯ:<sup>*</sup>
-                  <input class="field-personal__input" placeholder="барсик" type="text" name="name" required>
-                </label>
+                <label class="field-personal__label" for="name">ИМЯ:<sup>*</sup></label>
+                <input class="field-personal__input" id="name" placeholder="барсик" type="text" name="name" required>
               </li>
               <li class="field-personal__item">
-                <label class="field-personal__label">Вес (кг):<sup>*</sup>
-                  <input class="field-personal__input" placeholder="7" type="text" name="weight" required>
-                </label>
+                <label class="field-personal__label" for="weight">Вес (кг):<sup>*</sup></label>
+                <input class="field-personal__input" id="weight" placeholder="7" type="text" name="weight" required>
               </li>
               <li class="field-personal__item">
-                <label class="field-personal__label">Возраст (лет):
-                  <input class="field-personal__input" placeholder="7" type="text" name="age">
-                </label>
+                <label class="field-personal__label" for="age">Возраст (лет):</label>
+                <input class="field-personal__input" id="age" placeholder="7" type="text" name="age">
               </li>
             </ul>
           </div>
@@ -76,93 +74,81 @@
             <h2 class="visually-hidden">Выбор программы</h2>
             <ul class="field-program__list">
               <li class="field-program__item">
-                <label class="field-program__label">
-                  <input class="field-program__input" type="radio" name="weight-loss" checked />
-                  Похудение
-                </label>
+                <input class="field-program__input visually-hidden" id="weight-loss" type="radio" name="program" value="weight-loss" checked />
+                <label class="field-program__label" for="weight-loss">похудение</label>
               </li>
               <li class="field-program__item">
-                <label class="field-program__label">
-                  <input class="field-program__input" type="radio" name="weight-gain" />
-                  Набор массы
-                </label>
+                <input class="field-program__input visually-hidden" id="weight-gain" type="radio" name="program" value="weight-gain" />
+                <label class="field-program__label"  for="weight-gain">Набор массы</label>
               </li>
               <li class="field-program__item">
-                <label class="field-program__label">
-                  <input class="field-program__input" type="radio" name="need advice" />
-                  Не знаю (Нужен ваш совет)
-                </label>
+                <input class="field-program__input visually-hidden" id="need-advice" type="radio" name="program" value="need-advice" />
+                <label class="field-program__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </div>
-        </div>
+</div>
         <div class="form__field field-contacts">
-          <h2 class="form__title">Контактные данные (владельца кота)</h2>
+          <h2 class="form__title form__title--contacts">Контактные данные <br>(владельца кота)</h2>
+          <div class="field-contacts__wrapper">
           <ul class="field-contacts__list">
             <li class="field-contacts__item">
-              <label class="field-contacts__label">Email:<sup>*</sup>
-                <input class="field-contacts__input" placeholder="kuklachev@gmail.com" type="email" name="email"
-                  required>
-                <svg width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="#222" stroke-width="1.3"
-                    d="M.65 5.85v8M17.65 5.85v8M0 13.2h18M0 1.2h18M17.35 3.03 9 9.53.65 3.02V1.5h16.7v1.53Z" />
-                </svg>
-              </label>
+              <label class="field-contacts__label">Email:<sup>*</sup></label>
+              <input class="field-contacts__input" placeholder="kuklachev@gmail.com" type="email" name="email" required>
+              <svg class="field-contacts__icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#222" stroke-width="1.3"
+                  d="M.65 5.85v8M17.65 5.85v8M0 13.2h18M0 1.2h18M17.35 3.03 9 9.53.65 3.02V1.5h16.7v1.53Z" />
+              </svg>
             </li>
             <li class="field-contacts__item">
-              <label class="field-contacts__label">Телефон:<sup>*</sup>
-                <input class="field-contacts__input" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone"
-                  required>
-                <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g  fill="#000">
-                    <path
-                      d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z" />
-                  </g>
-                  <defs>
-                    <clipPath>
-                      <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.07H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </label>
+              <label class="field-contacts__label">Телефон:<sup>*</sup></label>
+              <input class="field-contacts__input" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone" required>
+              <svg class="field-contacts__icon" width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#000">
+                  <path
+                    d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.07H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </li>
           </ul>
+          </div>
         </div>
         <div class="form__field field-comment">
-          <h2 class="form__title">Комментарий</h2>
+          <h2 class="form__title form__title--comment">Комментарий</h2>
+          <div class="field-comment__wrapper">
           <label class="field-comment__label">
             <textarea class="field-comment__input" placeholder="Расскажите обо всех повадках кота" name="comment"
               required></textarea>
           </label>
+          </div>
         </div>
         <div class="form__field field-addition">
-          <h2 class="form__title">Дополнительно</h2>
+          <h2 class="form__title form__title--addition">Дополнительно</h2>
+          <div class="field-addition__wrapper">
           <ul class="field-addition__list">
             <li class="field-addition__item">
-              <label class="field-addition__label">
-                <input class="field-addition__input" type="checkbox" name="sweetener" checked />
-                Сахарозаменитель
-              </label>
+              <input class="field-addition__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked />
+              <label class="field-addition__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="field-addition__item">
-              <label class="field-addition__label">
-                <input class="field-addition__input" type="checkbox" name="water" />
-                Питьевая вода
-              </label>
+              <input class="field-addition__input visually-hidden" id="water" type="checkbox" name="water" />
+              <label class="field-addition__label" for="water">Питьевая вода</label>
             </li>
             <li class="field-addition__item">
-              <label class="field-addition__label">
-                <input class="field-addition__input" type="checkbox" name="milk" />
-                Молоко
-              </label>
+              <input class="field-addition__input visually-hidden" id="milk" type="checkbox" name="milk" />
+              <label class="field-addition__label" for="milk">Молоко</label>
             </li>
             <li class="field-addition__item">
-              <label class="field-addition__label">
-                <input class="field-addition__input" type="checkbox" name="vitamins" />
-                Витамины
-              </label>
+              <input class="field-addition__input visually-hidden" id="vitamins" type="checkbox" name="vitamins" />
+              <label class="field-addition__label" for="vitamins">Витамины</label>
             </li>
           </ul>
+          </div>
         </div>
         <div class="form__button-wrapper">
           <button class="button form__button" type="submit">
@@ -171,7 +157,6 @@
           <p class="form__legend">* — Обязательные поля</p>
         </div>
       </form>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts page-footer__contacts--grey contacts">
