@@ -3,11 +3,10 @@
   border: none;
   border-bottom: 1px solid $special-mobile;
   border-top: 1px solid $special-mobile;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 75px;
+    //margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,5 @@
 .field-addition {
   border: none;
-  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -9,6 +8,17 @@
 
 .field-addition__wrapper {
   @include wrapper-form;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .field-addition__list {

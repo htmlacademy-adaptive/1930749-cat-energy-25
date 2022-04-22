@@ -182,12 +182,16 @@
         height: 2px;
         bottom: -10px;
         left: 0;
+      }
+    }
+
+    &--active-index {
+      &::after {
         background: $basic-white;
       }
     }
   }
 }
-
 
 .main-nav__link {
   text-decoration: none;
@@ -207,6 +211,9 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
+
+    &--index {
+      color: $basic-white;
+    }
   }
 }
