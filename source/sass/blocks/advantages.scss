@@ -1,19 +1,19 @@
 .advantages {
   @include wrapper;
-  padding-bottom: 49px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
+    margin-bottom: 43px;
     border-bottom: 1px solid $tablet-border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 26px;
+    margin-bottom: 26px;
+    padding-bottom: 0;
     border: none;
   }
 }
-
-// .advantages__wrapper{}
 
 .advantages__title {
   font-size: 36px;
@@ -21,16 +21,13 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
-
-  //@media (min-width: $desktop-width) {
-  //}
 }
 
 .advantages__list {

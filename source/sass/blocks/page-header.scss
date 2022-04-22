@@ -26,8 +26,20 @@
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 192px;
 
-// .logo{}
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
 // .logo__image{}
 
 //.main-nav {
@@ -170,7 +182,7 @@
         height: 2px;
         bottom: -10px;
         left: 0;
-        //background: $basic-white;
+        background: $basic-white;
       }
     }
   }
@@ -195,6 +207,6 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    //color: $basic-white;
+    color: $basic-white;
   }
 }
