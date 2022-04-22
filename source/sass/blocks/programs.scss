@@ -1,19 +1,15 @@
 .programs {
   @include wrapper;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
   }
 }
-
-// .programs__wrapper {
-// }
 
 .programs__list {
   @include list-style;
@@ -37,6 +33,14 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 300px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 59px 52px;
+  }
 
   &::before {
     position: absolute;
@@ -125,14 +129,6 @@
       }
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 41px 51px 59px 52px;
-  }
 }
 
 .programs__title {
@@ -162,9 +158,11 @@
   line-height: 18px;
   color: $basic-grey-text;
   border-bottom: 1px solid $special-mobile;
-  padding: 22px 0;
+  padding-top: 29px;
+  padding-bottom: 23px;
+  padding-right: 13px;
   margin: 0;
-  width: 230px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -172,11 +170,14 @@
     color: $basic-black;
     width: 340px;
     border: none;
-    padding-bottom: 52px;
+    padding-top: 24px;
+    padding-bottom: 0;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 73px 0 27px 0;
+    padding-top: 73px;
+    margin-bottom: 27px;
     width: 470px;
   }
 }
@@ -187,14 +188,13 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
-  padding-top: 20px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     background: url("../../img/icons/icon_arrow.svg");
-    top: 22px;
+    top: 2px;
     left: 100px;
     width: 24px;
     height: 12px;
