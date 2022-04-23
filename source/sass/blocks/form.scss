@@ -1,12 +1,18 @@
 .form__wrapper {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
     padding-left: 110px;
     padding-right: 110px;
     display: grid;
     grid-template-columns: repeat(2, 570px);
     grid-template-rows: 196px;
     gap: 80px;
-    margin-bottom: 70px;
   }
 }
 
@@ -15,6 +21,8 @@
   line-height: 26px;
   font-weight: 400;
   margin: 0;
+  background-color: $basic-white;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -22,39 +30,34 @@
   }
 }
 
-.form__title--contacts {
-  padding-bottom: 35px;
-  padding-left: 20px;
+.form__title-line {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     height: 2px;
-    width: 31%;
     background-color: $basic-green;
-    right: 0;
-    top: 15px;
+    width: 100%;
+    z-index: -1;
+    top: 50%;
   }
+}
+
+.form__title-line--contacts::before {
+  @media (max-width: $tablet-width) {
+    top: 30%;
+  }
+}
+
+.form__title--contacts {
+  padding-left: 20px;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-bottom: 76px;
-
-    &::after {
-      width: 19%;
-      top: 20px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      width: 30px;
-      background-color: $basic-green;
-      left: 0;
-      top: 20px;
-    }
+    margin-left: 30px;
+    padding-left: 39px;
+    padding-right: 42px;
 
     br {
       display: none;
@@ -62,110 +65,42 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-
-    &::after {
-      width: 55%;
-    }
-
-    &::before {
-      width: 70px;
-    }
+    padding-left: 40px;
+    margin-left: 70px;
+    padding-right: 40px;
   }
 }
 
 .form__title--comment {
   padding-left: 20px;
-  padding-bottom: 38px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 50%;
-    background-color: $basic-green;
-    right: 0;
-    top: 15px;
-  }
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-bottom: 76px;
-
-    &::after {
-      width: 62%;
-      top: 20px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      width: 30px;
-      background-color: $basic-green;
-      left: 0;
-      top: 20px;
-    }
+    margin-left: 30px;
+    padding-left: 39px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-
-    &::after {
-      width: 77%;
-    }
-
-    &::before {
-      width: 70px;
-    }
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 70px;
   }
 }
 
 .form__title--addition {
   padding-left: 20px;
-  padding-bottom: 34px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 43%;
-    background-color: $basic-green;
-    right: 0;
-    top: 15px;
-  }
+  padding-right: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-bottom: 57px;
-
-    &::after {
-      width: 446px;
-      top: 20px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      width: 30px;
-      background-color: $basic-green;
-      left: 0;
-      top: 20px;
-    }
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-
-    &::after {
-      width: 75%;
-    }
-
-    &::before {
-      width: 70px;
-    }
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 70px;
   }
 }

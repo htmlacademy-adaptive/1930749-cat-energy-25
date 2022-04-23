@@ -18,11 +18,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 90px;
+    padding-top: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    padding-bottom: 165px;
   }
 }
 
@@ -32,6 +33,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 54px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,13 +45,13 @@
   text-transform: uppercase;
   margin: 0;
   width: 226px;
-  padding-bottom: 39px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 323px;
-    padding-bottom: 66px;
+    margin-bottom: 66px;
   }
 }
 
