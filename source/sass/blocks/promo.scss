@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   &::before {
     content: "";
@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 0;
+    padding-bottom: 0;
 
     &::before {
       background: none;
@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    padding-bottom: 82px;
 
     &::before {
       height: 694px;
@@ -72,7 +72,7 @@
     line-height: 60px;
     color: $basic-black;
     text-align: left;
-    padding-left: 87px;
+    margin-left: 87px;
     margin-top: 0;
     width: 416px;
     margin-bottom: 40px;

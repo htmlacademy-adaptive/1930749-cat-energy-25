@@ -2,7 +2,20 @@
   border: none;
 }
 
-// .field-comment__label{}
+.field-comment__wrapper {
+  @include wrapper-form;
+  padding-top: 38px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
+}
 
 .field-comment__input {
   border: 1px solid $special-input;
@@ -12,10 +25,16 @@
   line-height: 18px;
   width: 100%;
   min-height: 150px;
+  padding: 9px 12px 9px 15px;
 
   @media (min-width: $tablet-width) {
     min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  //@media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 19px;
+  }
 }

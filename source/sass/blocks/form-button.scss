@@ -1,15 +1,22 @@
 .form__button-wrapper {
+  @include wrapper-form;
+  padding-bottom: 34px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-bottom: 72px;
   }
-  //@media (min-width: $desktop-width) {
-  //}
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 .form__button {
   border: none;
   font-size: 16px;
   line-height: 20px;
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -30,4 +37,12 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  padding-top: 21px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

@@ -2,17 +2,50 @@
   border: none;
 }
 
+.field-contacts__wrapper {
+  @include wrapper-form;
+  padding-top: 35px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
+}
+
 .field-contacts__list {
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: 52px;
+    gap: 78px;
+  }
 }
 
 .field-contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 14px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
-  //@media (min-width: $desktop-width) {}
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .field-contacts__label {
@@ -20,10 +53,44 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-grey-text;
+  margin-right: 12px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
 }
 
 .field-contacts__input {
+  height: 45px;
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-grey-text;
+  padding: 15px;
+  padding-right: 50px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+}
+
+.field-contacts__icon {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 25px;
+  }
 }
