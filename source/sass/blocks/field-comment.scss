@@ -4,16 +4,16 @@
 
 .field-comment__wrapper {
   @include wrapper-form;
-  margin-top: 38px;
-  margin-bottom: 23px;
+  padding-top: 38px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
-    margin-bottom: 65px;
+    padding-top: 76px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    padding-bottom: 67px;
   }
 }
 

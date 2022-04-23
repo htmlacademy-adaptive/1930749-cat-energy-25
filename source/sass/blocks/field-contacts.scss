@@ -4,16 +4,16 @@
 
 .field-contacts__wrapper {
   @include wrapper-form;
-  margin-top: 35px;
-  margin-bottom: 34px;
+  padding-top: 35px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
-    margin-bottom: 65px;
+    padding-top: 76px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    padding-bottom: 67px;
   }
 }
 

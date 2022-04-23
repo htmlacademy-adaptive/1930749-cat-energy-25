@@ -1,15 +1,14 @@
 .field-personal {
   @include wrapper-form;
   border: none;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 0;
   }
 }
 

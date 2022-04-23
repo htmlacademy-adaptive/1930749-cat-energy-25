@@ -1,14 +1,14 @@
 .form__button-wrapper {
   @include wrapper-form;
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    padding-bottom: 82px;
   }
 }
 
