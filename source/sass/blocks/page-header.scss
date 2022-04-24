@@ -42,7 +42,15 @@
   &:active {
     opacity: 0.6;
   }
+}
 
+.logo__image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text {
   @media (min-width: $tablet-width) {
     width: 174px;
   }
@@ -51,7 +59,6 @@
     width: 202px;
   }
 }
-// .logo__image{}
 
 //.main-nav {
 //

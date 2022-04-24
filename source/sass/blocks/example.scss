@@ -215,6 +215,12 @@
 
 .example__slider-image {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    width: 592px;
+    height: 511px;
+  }
 }
 
 .example__range {
@@ -267,7 +273,7 @@
     border-radius: 50%;
     background-color: $basic-white;
     border: 1px solid $special-grey;
-    left: 50%;
+    left: 46%;
     top: -14px;
     box-shadow: 0 1px 3px rgba($color: $basic-black, $alpha: 0.16);
 

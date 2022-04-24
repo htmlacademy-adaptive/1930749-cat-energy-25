@@ -36,10 +36,11 @@
     height: 430px;
     border: none;
     background-color: $basic-grey;
-    padding: 40px;
+    padding: 0 37px 39px 39px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
   }
 
   //@media (min-width: $desktop-width) {
