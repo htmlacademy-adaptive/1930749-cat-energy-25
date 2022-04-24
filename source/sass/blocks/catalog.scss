@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 75px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -99,11 +101,20 @@
 .catalog__link-more {
   background-color: $basic-grey;
   color: $basic-grey-text;
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: rgba($color: $basic-grey-text, $alpha: 0.3);
+  }
 }
 
 .catalog__button-more {
   border: none;
   background-color: $basic-white;
+  cursor: pointer;
 }
 
 .catalog__button {

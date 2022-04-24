@@ -14,6 +14,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 67px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -71,6 +73,7 @@
   padding: 15px;
   padding-right: 50px;
   width: 100%;
+  border: 1px solid $special-input;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -79,6 +82,48 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey-text;
+  }
+
+  &:focus + .field-contacts__icon--email path {
+    stroke: $basic-green;
+  }
+
+  &:focus + .field-contacts__icon--phone {
+    fill: $basic-green;
+  }
+
+  //&:invalid {
+  //  border: 2px solid $input-error;
+  //}
+  //&:invalid + .field-contacts__icon--email path {
+  //  stroke: $input-error;
+  //}
+  //&:invalid + .field-contacts__icon--phone {
+  //  fill: $input-error;
+  //}
+  &--invalid {
+    border: 2px solid $input-error;
+  }
+
+  &--invalid + .field-contacts__icon--email path {
+    stroke: $input-error;
+  }
+
+  &--invalid + .field-contacts__icon--phone {
+    fill: $input-error;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 

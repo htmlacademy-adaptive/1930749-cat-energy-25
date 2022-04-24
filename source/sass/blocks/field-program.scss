@@ -6,7 +6,6 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    //margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +46,7 @@
   color: $special-dark-grey;
   position: relative;
   padding-left: 45px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -56,7 +56,7 @@
     background-color: $basic-white;
     border: 1px solid $special-grey;
     border-radius: 50%;
-    top: -6px;
+    top: -5px;
     left: 0;
   }
 
@@ -70,22 +70,30 @@
       height: 40px;
     }
   }
+
+  &:hover::before {
+    border-color: $button-hover;
+  }
 }
 
 .field-program__input:checked + .field-program__label::after {
   position: absolute;
   content: "";
   background-color: $basic-green;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  top: 2px;
+  top: 4px;
   left: 9px;
 
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: 5px;
+    top: 6px;
     left: 11px;
   }
+}
+
+.field-program__input:disabled + .field-program__label {
+  opacity: 0.3;
 }

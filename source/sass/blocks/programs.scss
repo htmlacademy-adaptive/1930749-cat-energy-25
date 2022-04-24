@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 70px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -190,10 +192,19 @@
   color: $basic-black;
   position: relative;
 
+  &:hover::before {
+    background: url("../../img/icons/icon-arrow-hover.svg");
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    background: url("../../img/icons/icon_arrow.svg");
+    background: url("../../img/icons/icon-arrow.svg");
     top: 2px;
     left: 100px;
     width: 24px;
@@ -203,9 +214,6 @@
       top: 10px;
       left: 132px;
     }
-
-    //@media (min-width: $desktop-width) {
-    //}
   }
 
   @media (min-width: $tablet-width) {
