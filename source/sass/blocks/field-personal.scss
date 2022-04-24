@@ -53,6 +53,27 @@
   width: 100%;
   padding-left: 15px;
 
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey-text;
+  }
+
+  //&:invalid {
+  //  border: 2px solid $input-error;
+  //}
+
+  &--invalid {
+    border: 2px solid $input-error;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;

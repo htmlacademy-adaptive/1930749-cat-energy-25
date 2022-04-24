@@ -1,13 +1,8 @@
 .example {
-  @include wrapper;
-  padding-top: 25px;
-  padding-bottom: 40px;
   background-color: $special-example;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 60px;
     background-color: $basic-white;
     z-index: 2;
 
@@ -24,20 +19,30 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 70px;
     border: none;
   }
 }
 
 .example__wrapper {
+  @include wrapper;
+  padding-top: 25px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 70px;
     flex-direction: row;
     justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -253,6 +258,8 @@
   border-radius: 6px;
   left: 6px;
   top: 4px;
+  cursor: pointer;
+
 
   @media (min-width: $tablet-width) {
     width: 34px;
@@ -262,6 +269,16 @@
     border: 1px solid $special-grey;
     left: 50%;
     top: -14px;
+    box-shadow: 0 1px 3px rgba($color: $basic-black, $alpha: 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba($color: $basic-black, $alpha: 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba($color: $basic-black, $alpha: 0.2);
+      border-color: $basic-green;
+    }
 
     &::after {
       position: absolute;
@@ -271,8 +288,8 @@
       border-radius: 50%;
       background-color: $basic-green;
       z-index: 2;
-      left: 13px;
-      top: 13px;
+      left: 12px;
+      top: 12px;
     }
   }
 }
@@ -283,11 +300,20 @@
   line-height: 20px;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
+    border-bottom: 1px dotted rgba($color: $basic-black, $alpha: 0.4);
 
-  //@media (min-width: $desktop-width) {}
+    &:hover {
+      border-bottom: 1px solid rgba($color: $basic-black, $alpha: 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
 }

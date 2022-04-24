@@ -24,6 +24,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 165px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -57,4 +59,9 @@
 
 .page-main__wrapper-form {
   @include wrapper-form;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }

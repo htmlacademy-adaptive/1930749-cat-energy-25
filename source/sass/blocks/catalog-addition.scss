@@ -12,6 +12,13 @@
   }
 }
 
+.catalog-addition__title-container {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .catalog-addition__title {
   padding-left: 19px;
   padding-right: 22px;
@@ -51,6 +58,8 @@
     padding-bottom: 86px;
     display: flex;
     justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
