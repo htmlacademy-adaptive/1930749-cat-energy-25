@@ -14,6 +14,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 61px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -55,6 +57,7 @@
   text-transform: uppercase;
   position: relative;
   padding-left: 46px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -77,9 +80,11 @@
       height: 40px;
     }
   }
-}
 
-// .field-addition__input{}
+  &:hover::before {
+    border-color: $button-hover;
+  }
+}
 
 .field-addition__input:checked + .field-addition__label::after {
   content: "";
@@ -98,4 +103,8 @@
     top: 2px;
     left: 8px;
   }
+}
+
+.field-addition__input:disabled + .field-addition__label {
+  opacity: 0.3;
 }

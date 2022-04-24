@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -31,6 +33,15 @@
   align-items: center;
   justify-content: space-between;
   width: 192px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -145,6 +156,10 @@
   min-height: 66px;
   border-top: 1px solid $tablet-border-grey;
 
+  &:last-child {
+    border-bottom: 1px solid $tablet-border-grey;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     margin-right: 34px;
@@ -152,10 +167,19 @@
 
     &:last-child {
       margin-right: 0;
+      border-bottom: none;
     }
 
     &--active {
       position: relative;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
 
       &::after {
         content: "";
@@ -201,6 +225,15 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($color: $basic-black, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: $basic-black, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -214,6 +247,14 @@
 
     &--index {
       color: $basic-white;
+
+      &:hover {
+        color: rgba($color: $basic-white, $alpha: 0.6);
+      }
+
+      &:active {
+        color: rgba($color: $basic-white, $alpha: 0.3);
+      }
     }
   }
 }
