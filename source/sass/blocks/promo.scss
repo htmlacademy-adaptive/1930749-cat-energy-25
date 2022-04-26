@@ -9,12 +9,21 @@
     width: 100%;
     top: 0;
     z-index: -1;
+
     background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-      url("../../img/index-background-mobile.jpg");
+      url("../img/index-img/index-background-mobile.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+        url("../img/index-img/index-background-mobile@2x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
+
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -34,8 +43,14 @@
       top: -180px;
       right: 0;
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("../../img/index-background-desktop.jpg");
+        url("../img/index-img/index-background-desktop.jpg");
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+          url("../img/index-img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 }
@@ -101,33 +116,40 @@
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
+    width: 285px;
     text-align: left;
-    padding-left: 87px;
+    margin-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-    padding-left: 0;
     margin-bottom: 52px;
   }
 }
 
-//.promo__image {
-//  @media (min-width: $tablet-width) {
-//  }
+.promo__image {
+  z-index: -1;
+  display: block;
 
-//  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
 
-//  }
-//}
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: 0;
+    left: 558px;
+  }
+}
 
 .promo__program {
   width: 100%;
-  height: 40px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
-    height: 54px;
     position: absolute;
     left: 120px;
     top: 230px;
@@ -140,10 +162,15 @@
 }
 
 .promo__link {
+  min-height: 40px;
   text-decoration: none;
+  padding: 7px 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 244px;
+    min-height: 54px;
+    padding: 14px 26px;
   }
 }

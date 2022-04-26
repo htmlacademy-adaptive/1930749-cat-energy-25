@@ -1,13 +1,19 @@
 .promotion {
   height: 290px;
   background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-    url("../../img/promotion-background.jpg");
+    url("../img/promotion-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+      url("../img/promotion-background@2x.jpg");
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     height: 200px;
@@ -25,7 +31,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/icon-gift.svg");
+    background-image: url("../img/icons/icon-gift.svg");
     width: 80px;
     height: 80px;
     top: 65px;
