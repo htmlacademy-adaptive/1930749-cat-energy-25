@@ -46,6 +46,7 @@
 
 .catalog__item--more {
   @media (min-width: $tablet-width) {
+    padding-top: 52px;
     background-color: $basic-white;
     border: 2px solid $basic-grey;
   }
@@ -55,6 +56,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/icon-plus.svg");
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/icons/icon-plus-tablet.svg");
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.catalog__wrapper--more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 109px;
+  }
 }
 
 .catalog__title-more {
@@ -65,14 +91,12 @@
   text-decoration: none;
   color: $special-black;
   margin: 0;
-  margin-top: 23px;
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     width: 134px;
     font-size: 20px;
     line-height: 22px;
-    margin-top: 49px;
     margin-bottom: 23px;
     text-align: center;
   }
@@ -108,17 +132,12 @@
   }
 }
 
-.catalog__button-more {
-  border: none;
-  background-color: $basic-white;
-  cursor: pointer;
-}
-
 .catalog__button {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   height: 40px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 248px;

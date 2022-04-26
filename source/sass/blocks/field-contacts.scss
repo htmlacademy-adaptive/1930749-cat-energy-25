@@ -93,7 +93,7 @@
     border: 2px solid $basic-grey-text;
   }
 
-  &:focus + .field-contacts__icon--email path {
+  &:focus + .field-contacts__icon--email {
     stroke: $basic-green;
   }
 
@@ -104,12 +104,15 @@
   //&:invalid {
   //  border: 2px solid $input-error;
   //}
-  //&:invalid + .field-contacts__icon--email path {
+
+  //&:invalid + .field-contacts__icon--email {
   //  stroke: $input-error;
   //}
+
   //&:invalid + .field-contacts__icon--phone {
   //  fill: $input-error;
   //}
+
   &--invalid {
     border: 2px solid $input-error;
   }

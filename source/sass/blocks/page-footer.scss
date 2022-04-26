@@ -170,13 +170,15 @@
   }
 }
 
-.social__icon {
+.social__link {
+  color: #666666;
+
   &:hover {
-    fill: $basic-green;
+    color: $basic-green;
   }
 
   &:active {
-    fill: rgba($color: $basic-green, $alpha: 0.3);
+    color: rgba($color: $basic-green, $alpha: 0.3);
   }
 }
 
@@ -192,7 +194,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover svg {
+  &:hover .copyright__icon {
     fill: $basic-green;
   }
 
@@ -203,10 +205,6 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
-
-  //@media (min-width: $desktop-width) {
-
-  //}
 }
 
 .copyright__text {
