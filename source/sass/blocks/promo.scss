@@ -11,14 +11,14 @@
     z-index: -1;
 
     background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-      url("/img/index-img/index-background-mobile.jpg");
+      url("../img/index-img/index-background-mobile.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("/img/index-img/index-background-mobile@2x.jpg");
+        url("../img/index-img/index-background-mobile@2x.jpg");
       background-size: cover;
       background-repeat: no-repeat;
     }
