@@ -1,5 +1,13 @@
 .product-card__link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__title {
@@ -9,21 +17,50 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $special-dark-grey;
+  width: 76px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 174px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
-.product-card__title-more {
-  color: $special-black;
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 112px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
 }
 
-.product-card__button-more {
-  border: none;
-  background-color: $basic-white;
-}
-
-// .product-card{}
 
 .product-card__list {
   @include list-style;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .product-card__item {
@@ -31,33 +68,22 @@
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey-text;
-}
-
-// .product-card__termin{}
-// .product-card__description{}
-
-.product-card__text {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: $basic-grey-text;
-}
-
-.product-card__button {
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    width: 248px;
-  }
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid $special-grey;
+    padding: 8px 0;
 
-  @media (min-width: $desktop-width) {
-    width: 168px;
+    &:first-child {
+      padding-top: 0;
+    }
   }
 }
 
-.product-card__link-more {
-  background-color: $basic-grey;
-  color: $basic-grey-text;
+.product-card__termin,
+.product-card__description {
+  margin: 0;
 }

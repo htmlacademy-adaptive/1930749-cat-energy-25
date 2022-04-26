@@ -1,16 +1,47 @@
 .field-personal {
+  @include wrapper-form;
   border: none;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .field-personal__list {
   @include list-style;
 }
 
-// .field-personal__item{}
+.field-personal__item {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .field-personal__label {
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-grey-text;
+  margin-right: 12px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-personal__input {
@@ -18,4 +49,35 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-grey-text;
+  height: 45px;
+  width: 100%;
+  padding-left: 15px;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey-text;
+  }
+
+  //&:invalid {
+  //  border: 2px solid $input-error;
+  //}
+
+  &--invalid {
+    border: 2px solid $input-error;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-left: 18px;
+  }
 }

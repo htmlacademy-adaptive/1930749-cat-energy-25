@@ -1,13 +1,15 @@
 .page-header {
-  padding: 0 20px;
+  @include wrapper;
   border-bottom: 1px solid $special-mobile;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    border: none;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -26,29 +28,107 @@
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 192px;
+  cursor: pointer;
 
-// .logo{}
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
 // .logo__image{}
 
-// .main-nav {
-// }
+//.main-nav {
+//
+//}
 
 .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: $basic-white;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav__wrapper {
-  display: none;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  height: 1.5px;
+  width: 24px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    width: 440px;
+.main-nav--opened .main-nav__toggle {
+  top: 24px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic-black;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 478px;
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    background-color: $basic-white;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: absolute;
+    background-color: $basic-white;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    z-index: 10;
   }
 }
 
@@ -57,6 +137,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     width: 440px;
     justify-content: space-between;
   }
@@ -68,7 +149,73 @@
 }
 
 
-// .main-nav__item{}
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66px;
+  border-top: 1px solid $tablet-border-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $tablet-border-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-right: 34px;
+    min-height: 24px;
+
+    &:last-child {
+      margin-right: 0;
+      border-bottom: none;
+    }
+
+    &--active {
+      position: relative;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+        background: $basic-green;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 30px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+
+    &--active-index {
+      &::after {
+        background: $basic-white;
+      }
+    }
+  }
+}
 
 .main-nav__link {
   text-decoration: none;
@@ -78,6 +225,15 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($color: $basic-black, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: $basic-black, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -86,13 +242,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    //color: $basic-white;
-  }
-}
 
-.main-nav__item--active {
-  border-bottom: 2px solid $basic-green;
+    &--index {
+      color: $basic-white;
+
+      &:hover {
+        color: rgba($color: $basic-white, $alpha: 0.6);
+      }
+
+      &:active {
+        color: rgba($color: $basic-white, $alpha: 0.3);
+      }
+    }
+  }
 }

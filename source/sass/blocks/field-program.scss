@@ -1,19 +1,99 @@
 .field-program {
+  @include wrapper-form;
   border: none;
   border-bottom: 1px solid $special-mobile;
   border-top: 1px solid $special-mobile;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
 
 .field-program__list {
   @include list-style;
+  padding: 22px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-input;
+    padding: 25px 0 25px 28px;
+  }
 }
 
-// .field-program__item{}
+.field-program__item {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+  }
+}
 
 .field-program__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+    top: -5px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $button-hover;
+  }
 }
-// .field-program__input{}
+
+.field-program__input:checked + .field-program__label::after {
+  position: absolute;
+  content: "";
+  background-color: $basic-green;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 4px;
+  left: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 6px;
+    left: 11px;
+  }
+}
+
+.field-program__input:disabled + .field-program__label {
+  opacity: 0.3;
+}

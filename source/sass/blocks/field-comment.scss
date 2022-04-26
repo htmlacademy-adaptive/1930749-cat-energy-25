@@ -1,14 +1,23 @@
 .field-comment {
   border: none;
-  border-top: 2px solid $basic-green;
 }
 
-.field-comment__legend {
-  font-size: 24px;
-  line-height: 26px;
-}
+.field-comment__wrapper {
+  @include wrapper-form;
+  padding-top: 38px;
+  padding-bottom: 23px;
 
-// .field-comment__label{}
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
 
 .field-comment__input {
   border: 1px solid $special-input;
@@ -16,4 +25,18 @@
   text-transform: uppercase;
   color: $basic-grey-text;
   line-height: 18px;
+  width: 100%;
+  min-height: 150px;
+  padding: 9px 12px 9px 15px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 19px;
+  }
 }
