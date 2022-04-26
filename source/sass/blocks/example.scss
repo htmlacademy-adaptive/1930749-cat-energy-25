@@ -138,11 +138,7 @@
     font-size: 30px;
     line-height: 37px;
   }
-
-  //@media (min-width: $desktop-width) {
-  //}
 }
-
 
 .example__description {
   font-family: "Arial", sans-serif;
@@ -209,12 +205,12 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    justify-content: space-between;
   }
 }
 
 .example__slider-image {
   margin-bottom: 15px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
@@ -250,10 +246,6 @@
     height: 6px;
     background-color: $tablet-range;
   }
-
-  //@media (min-width: $desktop-width) {
-
-  //}
 }
 
 .example__range-toggle {

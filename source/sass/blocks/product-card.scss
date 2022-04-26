@@ -6,6 +6,8 @@
 }
 
 .product-card__image {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 163px;
     height: 174px;
@@ -48,6 +50,7 @@
   color: $special-dark-grey;
   width: 76px;
   margin-bottom: 14px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
