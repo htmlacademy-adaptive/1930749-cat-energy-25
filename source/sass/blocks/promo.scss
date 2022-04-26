@@ -43,12 +43,12 @@
       top: -180px;
       right: 0;
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("/img/index-img/index-background-desktop.jpg");
+        url("../img/index-img/index-background-desktop.jpg");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-          url("/img/index-img/index-background-desktop@2x.jpg");
+          url("../img/index-img/index-background-desktop@2x.jpg");
         background-size: cover;
       }
     }
