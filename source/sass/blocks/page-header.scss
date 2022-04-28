@@ -27,6 +27,14 @@
   &--catalog {
     @media (min-width: $desktop-width) {
       min-height: 188px;
+
+      .logo {
+        margin-top: 53px;
+      }
+
+      .main-nav {
+        margin-top: 69px;
+      }
     }
   }
 }
@@ -71,6 +79,7 @@
   display: block;
   width: 100%;
   margin-top: 13px;
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -80,6 +89,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 42px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 65px;
   }
@@ -214,9 +224,15 @@
         position: absolute;
         right: 0;
         height: 2px;
-        bottom: -10px;
+        bottom: -8px;
         left: 0;
         background: $basic-green;
+      }
+    }
+
+    &--active-index {
+      &::after {
+        bottom: -10px;
       }
     }
   }

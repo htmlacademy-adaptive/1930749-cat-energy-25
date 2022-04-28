@@ -34,12 +34,16 @@
     background-image: url("../img/icons/icon-gift.svg");
     width: 80px;
     height: 80px;
-    top: 65px;
-    left: 35%;
+    top: 58px;
+    left: 100px;
 
     @media (min-width: $tablet-width) {
-      left: 88px;
-      top: 60px;
+      left: 79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 85px;
     }
   }
 }

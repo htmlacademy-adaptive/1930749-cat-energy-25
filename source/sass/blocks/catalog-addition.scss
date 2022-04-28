@@ -32,30 +32,33 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 30px;
-    padding-right: 37px;
+    padding-left: 37px;
+    padding-right: 36px;
     margin-left: 30px;
+    margin-top: -2px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 70px;
     padding-left: 40px;
     padding-right: 35px;
+    margin-top: -8px;
   }
 }
 
 .catalog-addition__wrapper {
   @include wrapper;
   padding-bottom: 35px;
-  padding-top: 36px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 76px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 86px;
+    padding-top: 79px;
+    padding-bottom: 85px;
     display: flex;
     justify-content: space-between;
     width: 1440px;
@@ -68,7 +71,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,8 +82,8 @@
 
 .catalog-addition__item {
   border-bottom: 1px solid $special-grey;
-  padding-bottom: 19px;
-  padding-top: 13px;
+  padding-bottom: 17px;
+  padding-top: 14px;
   display: flex;
   flex-direction: column;
 
@@ -91,7 +94,7 @@
   @media (min-width: $tablet-width) {
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
-    padding: 26px 38px 28px 38px;
+    padding: 26px 37px 28px 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,6 +140,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    margin-top: 5px;
   }
 }
 
@@ -151,17 +155,30 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 288px;
     margin-bottom: 0;
+    margin-top: 8px;
   }
 }
 
 .catalog-addition__number {
   @media (min-width: $tablet-width) {
     padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.catalog-addition__price--desktop {
+  @media (min-width: $desktop-width) {
+    margin-right: 9px;
   }
 }
 
