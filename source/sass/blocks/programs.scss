@@ -213,19 +213,19 @@
     height: 12px;
   }
 
-    &--pro::before {
-      @media (min-width: $tablet-width) {
-        top: 8px;
-        left: 129px;
-      }
+  &--pro::before {
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: 129px;
     }
+  }
 
-    &--slim::before {
-      @media (min-width: $tablet-width) {
-          top: 8px;
-          left: 134px;
-        }
-      }
+  &--slim::before {
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: 134px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

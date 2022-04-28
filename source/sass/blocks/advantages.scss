@@ -136,10 +136,11 @@
   margin: 0;
   color: $basic-grey-text;
   font-family: "Arial", sans-serif;
-  padding-top:2px;
-  padding-bottom:4px;
-  br{
-    display:none;
+  padding-top: 2px;
+  padding-bottom: 4px;
+
+  br {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -148,6 +149,9 @@
     padding-top: 151px;
     width: 245px;
     padding-bottom: 0;
-    br{display:block;}
+
+    br {
+      display: block;
+    }
   }
 }

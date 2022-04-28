@@ -71,6 +71,7 @@
   color: $basic-grey-text;
   margin: 0;
   margin-bottom: 20px;
+
   br {
     display: none;
   }
@@ -79,6 +80,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+
     br {
       display: block;
     }
@@ -87,6 +89,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
     width: 438px;
+
     br {
       display: none;
     }
@@ -236,7 +239,7 @@
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  padding:0 5px;
+  padding: 0 5px;
 
   @media (min-width: $tablet-width) {
     width: 592px;
