@@ -45,9 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    min-height: 280px;
+    width: 1241px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 }
 
@@ -114,6 +114,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    min-height: 280px;
 
     &::after {
       content: counter(item);
@@ -146,7 +147,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 151px;
+    padding-top: 153px;
     width: 245px;
     padding-bottom: 0;
 

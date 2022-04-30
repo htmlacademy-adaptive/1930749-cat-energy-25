@@ -100,7 +100,9 @@
   @media (min-width: $desktop-width) {
     border: none;
     padding: 0;
-    height: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 72px;
     border-bottom: 1px solid $special-grey;
     flex-direction: row;
     justify-content: space-between;
@@ -186,7 +188,8 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  height: 40px;
+  min-height: 40px;
+  padding: 7px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

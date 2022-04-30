@@ -11,7 +11,7 @@
     padding-right: 110px;
     display: grid;
     grid-template-columns: repeat(2, 570px);
-    grid-template-rows: 196px;
+    grid-template-rows: auto;
     gap: 80px;
     width: 1440px;
     margin: 0 auto;

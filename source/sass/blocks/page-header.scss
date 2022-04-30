@@ -25,6 +25,8 @@
 
   &--form,
   &--catalog {
+    min-height: 66px;
+
     @media (min-width: $desktop-width) {
       min-height: 188px;
 
@@ -110,7 +112,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 22px;
   right: 20px;
   height: 1.5px;
   width: 24px;
