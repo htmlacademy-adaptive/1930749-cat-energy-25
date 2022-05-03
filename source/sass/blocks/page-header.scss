@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    min-height: 140px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,14 +18,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 66px;
+  flex-wrap: wrap;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
-    height: 140px;
+    min-height: 140px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 180px;
+    min-height: 180px;
+  }
+
+  &--form,
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      min-height: 188px;
+    }
   }
 }
 
@@ -42,6 +51,18 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.logo__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text {
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -51,7 +72,6 @@
     width: 202px;
   }
 }
-// .logo__image{}
 
 //.main-nav {
 //
@@ -144,15 +164,14 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
-    justify-content: space-between;
   }
 }
-
 
 .main-nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 66px;
   border-top: 1px solid $tablet-border-grey;
 
@@ -164,6 +183,7 @@
     border: none;
     margin-right: 34px;
     min-height: 24px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-right: 0;
