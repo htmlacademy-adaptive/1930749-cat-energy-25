@@ -4,7 +4,6 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    min-height: 140px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,32 +16,49 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  min-height: 66px;
+  min-height: 65px;
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
   }
 
-  @media (min-width: $desktop-width) {
-    min-height: 180px;
-  }
-
   &--form,
   &--catalog {
+    min-height: 66px;
+
     @media (min-width: $desktop-width) {
       min-height: 188px;
+
+      .logo {
+        margin-top: 53px;
+      }
+
+      .main-nav {
+        margin-top: 69px;
+      }
     }
   }
 }
 
 .logo {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 192px;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-top: 23px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    margin-top: 50px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -63,19 +79,23 @@
 
 .logo__text {
   display: block;
+  width: 100%;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
+    margin-top: 0;
   }
 }
 
-//.main-nav {
-//
-//}
+.main-nav {
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
+}
 
 .main-nav__toggle {
   width: 24px;
@@ -92,7 +112,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: 20px;
   height: 1.5px;
   width: 24px;
@@ -163,7 +183,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    width: 480px;
   }
 }
 
@@ -206,9 +226,15 @@
         position: absolute;
         right: 0;
         height: 2px;
-        bottom: -10px;
+        bottom: -8px;
         left: 0;
         background: $basic-green;
+      }
+    }
+
+    &--active-index {
+      &::after {
+        bottom: -10px;
       }
     }
   }
@@ -224,7 +250,7 @@
         position: absolute;
         right: 0;
         height: 2px;
-        bottom: -10px;
+        bottom: -8px;
         left: 0;
       }
     }

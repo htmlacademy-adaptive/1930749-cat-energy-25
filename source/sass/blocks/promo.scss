@@ -40,7 +40,7 @@
     &::before {
       height: 694px;
       width: 50%;
-      top: -180px;
+      top: -144px;
       right: 0;
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
         url("../img/index-img/index-background-desktop.jpg");
@@ -99,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-    margin-top: 43px;
+    margin-top: 80px;
     padding-left: 0;
   }
 }
@@ -119,6 +119,7 @@
     width: 285px;
     text-align: left;
     margin-left: 87px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,17 +148,19 @@
 
 .promo__program {
   width: 100%;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
     position: absolute;
     left: 120px;
-    top: 230px;
+    top: 229px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     left: 190px;
-    top: 314px;
+    top: 312px;
   }
 }
 

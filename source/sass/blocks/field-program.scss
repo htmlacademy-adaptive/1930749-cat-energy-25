@@ -16,11 +16,11 @@
 
 .field-program__list {
   @include list-style;
-  padding: 22px 0 20px 0;
+  padding: 23px 0 17px 0;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $special-input;
-    padding: 25px 0 25px 28px;
+    padding: 24px 0 24px 28px;
   }
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   height: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -56,7 +56,7 @@
     background-color: $basic-white;
     border: 1px solid $special-grey;
     border-radius: 50%;
-    top: -5px;
+    top: -7px;
     left: 0;
   }
 
@@ -68,6 +68,8 @@
     &::before {
       width: 40px;
       height: 40px;
+      top: -6px;
+      left: -1px;
     }
   }
 
@@ -80,17 +82,17 @@
   position: absolute;
   content: "";
   background-color: $basic-green;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
-  top: 4px;
-  left: 9px;
+  top: 2px;
+  left: 8px;
 
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: 6px;
-    left: 11px;
+    top: 5px;
+    left: 10px;
   }
 }
 

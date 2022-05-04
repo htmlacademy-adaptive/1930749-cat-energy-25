@@ -4,16 +4,16 @@
 
 .field-comment__wrapper {
   @include wrapper-form;
-  padding-top: 38px;
-  padding-bottom: 23px;
+  padding-top: 36px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 76px;
-    padding-bottom: 65px;
+    padding-top: 75px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 67px;
+    padding-bottom: 68px;
     width: 1440px;
     margin: 0 auto;
   }
@@ -22,6 +22,7 @@
 .field-comment__input {
   border: 1px solid $special-input;
   font-size: 16px;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $basic-grey-text;
   line-height: 18px;
@@ -33,10 +34,16 @@
     min-height: 175px;
     font-size: 20px;
     line-height: 30px;
+    padding: 8px 12px 9px 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 10px;
+    padding-top: 8px;
     padding-left: 19px;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey-text;
   }
 }

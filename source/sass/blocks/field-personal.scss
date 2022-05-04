@@ -1,7 +1,7 @@
 .field-personal {
   @include wrapper-form;
   border: none;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -35,18 +35,22 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-grey-text;
-  margin-right: 12px;
+  margin-right: 15px;
+  margin-top: -2px;
   flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 20px;
+    margin-top: -8px;
   }
 }
 
 .field-personal__input {
   border: 1px solid $special-input;
   font-size: 16px;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $basic-grey-text;
   height: 45px;
@@ -78,6 +82,6 @@
     font-size: 20px;
     line-height: 30px;
     height: 52px;
-    padding-left: 18px;
+    padding-left: 17px;
   }
 }

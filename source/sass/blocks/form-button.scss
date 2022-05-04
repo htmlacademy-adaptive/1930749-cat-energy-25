@@ -1,6 +1,6 @@
 .form__button-wrapper {
   @include wrapper-form;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,10 +17,11 @@
 .form__button {
   border: none;
   font-size: 16px;
+  font-family: "Oswald", sans-serif;
   line-height: 20px;
-  height: 40px;
+  min-height: 40px;
   cursor: pointer;
-  padding: 0;
+  padding: 13px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -40,12 +41,13 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 21px;
+  padding-top: 22px;
   margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    padding-top: 17px;
   }
 }
