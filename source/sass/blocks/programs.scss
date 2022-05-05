@@ -58,13 +58,13 @@
       width: 200px;
       height: 200px;
       left: 63%;
-      top: 91px;
+      top: 92px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
-      top: 45px;
+      top: 48px;
       left: 52px;
     }
   }
@@ -151,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 161px;
-    padding-top: 34px;
+    padding-top: 37px;
   }
 }
 
@@ -193,8 +193,9 @@
   text-transform: uppercase;
   color: $basic-black;
   position: relative;
+  display: block;
   padding-right: 47px;
-  width: 140px;
+  width: 180px;
 
   &:hover::before {
     background: url("../img/icons/icon-arrow-hover.svg");
@@ -209,23 +210,28 @@
     content: "";
     position: absolute;
     background: url("../img/icons/icon-arrow.svg");
-    top: 0;
-    right: 16px;
+    top: 2px;
+    left: 100px;
     width: 24px;
     height: 12px;
   }
 
   &--pro::before {
     @media (min-width: $tablet-width) {
-      top: 8px;
-      right: 28px;
+      top: 9px;
+      left: 129px;
     }
   }
 
   &--slim::before {
     @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 133px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 8px;
-      right: 23px;
+      left: 136px;
     }
   }
 

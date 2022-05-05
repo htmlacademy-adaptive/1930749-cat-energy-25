@@ -1,13 +1,16 @@
 .page-header {
   @include wrapper;
-  border-bottom: 1px solid $special-mobile;
 
-  @media (min-width: $tablet-width) {
-    border: none;
+  &--form,
+  &--catalog {
+    border-bottom: 1px solid $special-mobile;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
     width: 1440px;
     margin: 0 auto;
   }
@@ -17,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 65px;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
@@ -25,8 +28,6 @@
 
   &--form,
   &--catalog {
-    min-height: 66px;
-
     @media (min-width: $desktop-width) {
       min-height: 188px;
 
@@ -46,8 +47,8 @@
   justify-content: space-between;
   width: 192px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 17px;
+  margin-top: 11px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -57,7 +58,7 @@
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    margin-top: 50px;
+    margin-top: 53px;
   }
 
   &:hover {
@@ -93,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
+    margin-top: 69px;
   }
 }
 
@@ -112,7 +113,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 22px;
+  top: 23px;
   right: 20px;
   height: 1.5px;
   width: 24px;
@@ -163,6 +164,7 @@
   }
 
   .main-nav--nojs .main-nav__wrapper {
+    display: block;
     position: absolute;
     background-color: $basic-white;
     left: 0;
