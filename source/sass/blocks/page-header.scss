@@ -21,6 +21,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 66px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
@@ -32,11 +33,11 @@
       min-height: 188px;
 
       .logo {
-        margin-top: 53px;
+        margin-bottom: 20px;
       }
 
       .main-nav {
-        margin-top: 69px;
+        margin-bottom: 8px;
       }
     }
   }
@@ -47,18 +48,16 @@
   justify-content: space-between;
   width: 192px;
   cursor: pointer;
-  margin-top: 11px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    margin-top: 23px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    margin-top: 53px;
+    margin-bottom: -24px;
   }
 
   &:hover {
@@ -89,12 +88,16 @@
 }
 
 .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
-    margin-top: 42px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
+    margin-bottom: -36px;
   }
 }
 
@@ -113,7 +116,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 22px;
   right: 20px;
   height: 1.5px;
   width: 24px;
@@ -203,7 +206,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-right: 34px;
+    margin-right: 35px;
     min-height: 24px;
     margin-bottom: 10px;
 

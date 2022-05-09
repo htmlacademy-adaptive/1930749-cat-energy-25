@@ -11,14 +11,14 @@
     z-index: -1;
 
     background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-      url("../img/index-img/index-background-mobile.jpg");
+      url("../img/index-img/index-background-mobile.png");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("../img/index-img/index-background-mobile@2x.jpg");
+        url("../img/index-img/index-background-mobile@2x.png");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -43,12 +43,12 @@
       top: -144px;
       right: 0;
       background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("../img/index-img/index-background-desktop.jpg");
+        url("../img/index-img/index-background-desktop.png");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-          url("../img/index-img/index-background-desktop@2x.jpg");
+          url("../img/index-img/index-background-desktop@2x.png");
         background-size: cover;
       }
     }
@@ -148,13 +148,13 @@
 
 .promo__program {
   width: 100%;
-  margin-top: 3px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
     position: absolute;
     left: 120px;
-    top: 229px;
+    top: 230px;
     margin-top: 0;
   }
 
