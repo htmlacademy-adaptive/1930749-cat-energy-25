@@ -111,16 +111,15 @@
     border-color: $special-grey;
   }
 
-  &:focus {
-    outline: none;
-    border: 2px solid $basic-grey-text;
+  &:focus-visible {
+    outline: 2px solid $basic-grey-text;
   }
 
-  &:focus + .field-contacts__icon--email {
+  &:focus-visible + .field-contacts__icon--email {
     stroke: $basic-green;
   }
 
-  &:focus + .field-contacts__icon--phone {
+  &:focus-visible + .field-contacts__icon--phone {
     fill: $basic-green;
   }
 

@@ -83,9 +83,8 @@
     border-color: $special-grey;
   }
 
-  &:focus {
-    outline: none;
-    border: 2px solid $basic-grey-text;
+  &:focus-visible {
+    outline: 2px solid $basic-grey-text;
   }
 
   //&:invalid {

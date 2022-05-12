@@ -148,6 +148,10 @@
   &:active {
     color: rgba($color: $basic-grey-text, $alpha: 0.3);
   }
+
+  &:focus-visible {
+    outline: 2px solid $special-grey-2;
+  }
 }
 
 .catalog__button {

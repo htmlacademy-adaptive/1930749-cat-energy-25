@@ -204,6 +204,11 @@
     opacity: 0.3;
   }
 
+  &:focus-visible {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
+
   &::before {
     content: "";
     position: absolute;

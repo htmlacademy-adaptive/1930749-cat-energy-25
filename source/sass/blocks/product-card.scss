@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:focus-visible .product-card__image {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
 }
 
 .product-card__image {
@@ -58,6 +63,11 @@
   width: 76px;
   margin-bottom: 14px;
   z-index: 1;
+
+  &:focus-visible {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
