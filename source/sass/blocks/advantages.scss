@@ -1,9 +1,11 @@
 .advantages {
   @include wrapper;
+  padding-top: 2px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px;
+    padding-bottom: 46px;
+    padding-top: 0;
     border-bottom: 1px solid $tablet-border-grey;
   }
 

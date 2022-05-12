@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:focus-visible .product-card__image {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
 }
 
 .product-card__image {
@@ -59,6 +64,11 @@
   margin-bottom: 14px;
   z-index: 1;
 
+  &:focus-visible {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
@@ -87,7 +97,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
   }
 }
 

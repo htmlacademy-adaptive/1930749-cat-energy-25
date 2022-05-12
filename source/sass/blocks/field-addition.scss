@@ -8,12 +8,12 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 56px;
     padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 59px;
     width: 1440px;
     margin: 0 auto;
   }
@@ -104,6 +104,11 @@
     top: 6px;
     left: 10px;
   }
+}
+
+.field-addition__input:focus-visible + .field-addition__label {
+  outline: 2px solid $basic-grey-text;
+  outline-offset: 8px;
 }
 
 .field-addition__input:disabled + .field-addition__label {
