@@ -9,19 +9,16 @@
     width: 100%;
     top: 0;
     z-index: -1;
-
-    background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-      url("../img/index-img/index-background-mobile.png");
+    /* stylelint-disable */
+    background-image: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+      image-set(url("../img/index-img/index-background-mobile@2x.webp") 2x,
+        url("../img/index-img/index-background-mobile.webp") 1x,
+        url("../img/index-img/index-background-mobile@2x.png") 2x,
+        url("../img/index-img/index-background-mobile.png") 1x);
+    /* stylelint-enable */
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("../img/index-img/index-background-mobile@2x.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
   }
 
 
@@ -42,15 +39,15 @@
       width: 50%;
       top: -144px;
       right: 0;
-      background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-        url("../img/index-img/index-background-desktop.png");
+      /* stylelint-disable */
+      background-image: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+        image-set(
+          url("../img/index-img/index-background-desktop@2x.webp") 2x,
+          url("../img/index-img/index-background-desktop.webp") 1x,
+          url("../img/index-img/index-background-desktop@2x.png") 2x,
+          url("../img/index-img/index-background-desktop.png") 1x);
+      /* stylelint-enable */
       background-size: cover;
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-          url("../img/index-img/index-background-desktop@2x.png");
-        background-size: cover;
-      }
     }
   }
 }

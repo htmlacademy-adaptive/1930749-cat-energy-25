@@ -71,6 +71,7 @@
   color: $basic-grey-text;
   margin: 0;
   margin-bottom: 20px;
+  margin-right: -3px;
 
   br {
     display: none;
@@ -172,7 +173,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    width: 127px;
+    width: 129px;
     bottom: -11px;
     background-color: $basic-white;
   }
