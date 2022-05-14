@@ -75,6 +75,11 @@
     justify-content: space-between;
     margin-bottom: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 155px;
+  }
 }
 
 .map__image {
@@ -114,14 +119,12 @@
 }
 
 .page-footer__logo {
-  border-bottom: 1px solid $special-mobile;
   display: flex;
   justify-content: center;
   height: 94px;
-  width: 100%;
   cursor: pointer;
-  padding-top: 36px;
-  padding-bottom: 28px;
+  padding-top: 39px;
+  padding-bottom: 30px;
 
   &:hover {
     opacity: 0.8;
@@ -131,59 +134,76 @@
     opacity: 0.6;
   }
 
+  &:focus-visible {
+    outline: 1px solid $basic-green;
+    outline-offset: -1px;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 128px;
-    padding: 28px 0;
-    border: none;
+    padding: 35px 0;
     justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
+    padding: 35px 0;
   }
 }
 
 .page-footer__social {
   @include list-style;
+  border-top: 1px solid $special-mobile;
   border-bottom: 1px solid $special-mobile;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  padding: 20px 0;
+  min-height: 63px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 132px;
+    width: 134px;
     margin-left: 156px;
-    margin-right: 129px;
+    margin-right: 125px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    border: none;
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    padding-bottom: 0;
   }
 }
 
 .social__item {
-  &:nth-child(1) {
-    margin-right: 26px;
-  }
+  margin-right: 25px;
 
-  &:nth-child(2) {
-    margin-right: 28px;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .social__link {
-  color: #666666;
+  &:focus-visible {
+    outline: 1px solid $basic-green;
+    outline-offset: 0;
+  }
+}
 
+.social__icon {
+  fill: $special-grey-link;
+}
+
+.social__link .social__icon {
   &:hover {
-    color: $basic-green;
+    fill: $basic-green;
   }
 
   &:active {
-    color: rgba($color: $basic-green, $alpha: 0.3);
+    fill: rgba($color: $basic-green, $alpha: 0.3);
   }
 }
 
@@ -193,7 +213,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $basic-grey-text;
-  height: 78px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -207,10 +227,20 @@
     opacity: 0.3;
   }
 
+  &:focus-visible {
+    outline: 1px solid $basic-green;
+    outline-offset: 0;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 163px;
+    width: 164px;
+    height: auto;
     justify-content: flex-end;
   }
+}
+
+.copyright__icon {
+  fill: $special-grey-link;
 }
 
 .copyright__text {

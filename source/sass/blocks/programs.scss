@@ -37,7 +37,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 300px 57px 52px;
+    padding: 76px 300px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,13 +58,13 @@
       width: 200px;
       height: 200px;
       left: 63%;
-      top: 91px;
+      top: 92px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
-      top: 45px;
+      top: 48px;
       left: 52px;
     }
   }
@@ -96,7 +96,7 @@
         width: 70px;
         height: 97px;
         left: 67px;
-        top: 38px;
+        top: 42px;
       }
     }
   }
@@ -128,7 +128,7 @@
         width: 134px;
         height: 56px;
         left: 32px;
-        top: 65px;
+        top: 68px;
       }
     }
   }
@@ -151,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 161px;
-    padding-top: 34px;
+    padding-top: 37px;
   }
 }
 
@@ -163,7 +163,6 @@
   border-bottom: 1px solid $special-mobile;
   padding-top: 29px;
   padding-bottom: 23px;
-  padding-right: 13px;
   margin: 0;
   margin-bottom: 19px;
 
@@ -173,9 +172,8 @@
     color: $basic-black;
     width: 340px;
     border: none;
-    padding-top: 24px;
+    padding-top: 26px;
     padding-bottom: 0;
-    padding-right: 0;
     margin-bottom: 52px;
   }
 
@@ -193,8 +191,9 @@
   text-transform: uppercase;
   color: $basic-black;
   position: relative;
+  display: block;
   padding-right: 47px;
-  width: 140px;
+  width: 180px;
 
   &:hover::before {
     background: url("../img/icons/icon-arrow-hover.svg");
@@ -205,27 +204,37 @@
     opacity: 0.3;
   }
 
+  &:focus-visible {
+    outline: 1px solid $basic-black;
+    outline-offset: 2px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     background: url("../img/icons/icon-arrow.svg");
-    top: 0;
-    right: 16px;
+    top: 2px;
+    left: 100px;
     width: 24px;
     height: 12px;
   }
 
   &--pro::before {
     @media (min-width: $tablet-width) {
-      top: 8px;
-      right: 28px;
+      top: 9px;
+      left: 129px;
     }
   }
 
   &--slim::before {
     @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 133px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 8px;
-      right: 23px;
+      left: 136px;
     }
   }
 

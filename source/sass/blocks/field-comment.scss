@@ -34,7 +34,7 @@
     min-height: 175px;
     font-size: 20px;
     line-height: 30px;
-    padding: 8px 12px 9px 19px;
+    padding: 10px 12px 9px 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,8 +42,7 @@
     padding-left: 19px;
   }
 
-  &:focus {
-    outline: none;
-    border: 2px solid $basic-grey-text;
+  &:focus-visible {
+    outline: 2px solid $basic-grey-text;
   }
 }

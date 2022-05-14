@@ -1,7 +1,12 @@
 .promotion {
   min-height: 290px;
-  background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-    url("../img/promotion-background.jpg");
+  /* stylelint-disable */
+  background-image: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
+    image-set(url("../img/promotion-background@2x.webp") 2x,
+      url("../img/promotion-background.webp") 1x,
+      url("../img/promotion-background@2x.jpg") 2x,
+      url("../img/promotion-background.jpg") 1x);
+  /* stylelint-enable */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -12,12 +17,6 @@
   padding-left: 56px;
   padding-right: 56px;
   padding-top: 186px;
-
-  @media (min-resolution: 2dppx) {
-    background: linear-gradient(rgba($color: $basic-green, $alpha: 0.85), rgba($color: $basic-green, $alpha: 0.85)),
-      url("../img/promotion-background@2x.jpg");
-    background-size: cover;
-  }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;

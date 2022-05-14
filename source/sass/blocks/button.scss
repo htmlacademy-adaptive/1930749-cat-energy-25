@@ -14,4 +14,9 @@
   &:active {
     color: rgba($color: $basic-white, $alpha: 0.3);
   }
+
+  &:focus-visible {
+    outline: 2px solid $basic-green-hover;
+    outline-offset: 0;
+  }
 }

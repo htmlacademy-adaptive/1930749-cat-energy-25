@@ -17,7 +17,7 @@
 .page-main__title--catalog {
   @include wrapper;
   border-bottom: 1px solid $special-grey-2;
-  padding-top: 27px;
+  padding-top: 26px;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
 }
 
 .page-main__title--form {
-  padding-top: 27px;
+  padding-top: 26px;
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
