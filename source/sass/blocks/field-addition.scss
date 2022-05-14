@@ -1,0 +1,116 @@
+.field-addition {
+  border: none;
+}
+
+.field-addition__wrapper {
+  @include wrapper-form;
+  padding-top: 32px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 59px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.field-addition__list {
+  @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+    grid-template-rows: repeat(2, 40px);
+    gap: 32px 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 221px);
+    grid-template-rows: auto;
+    column-gap: 104px;
+  }
+}
+
+.field-addition__item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.field-addition__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    top: -5px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $button-hover;
+  }
+}
+
+.field-addition__input:checked + .field-addition__label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 9px;
+  border-left: 2px solid $basic-green;
+  border-bottom: 2px solid $basic-green;
+  transform: rotate(-45deg);
+  top: 2px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 12px;
+    top: 6px;
+    left: 10px;
+  }
+}
+
+.field-addition__input:focus-visible + .field-addition__label {
+  outline: 2px solid $basic-grey-text;
+  outline-offset: 8px;
+}
+
+.field-addition__input:disabled + .field-addition__label {
+  opacity: 0.3;
+}
