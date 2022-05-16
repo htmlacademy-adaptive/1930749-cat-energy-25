@@ -25,20 +25,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
+    align-items: stretch;
   }
 
   &--form,
   &--catalog {
     @media (min-width: $desktop-width) {
       min-height: 188px;
-
-      .logo {
-        margin-bottom: 20px;
-      }
-
-      .main-nav {
-        margin-bottom: 8px;
-      }
     }
   }
 }

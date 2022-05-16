@@ -25,23 +25,21 @@
           <img class="logo__text" src="img/icons/logo-text.svg" width="101" height="18" alt="Лого Магазин CatEnergy.">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--form main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -74,17 +72,17 @@
           <ul class="field-program__list">
             <li class="field-program__item">
               <input class="field-program__input visually-hidden" id="weight-loss" type="radio" name="program"
-                value="weight-loss" checked="checked" >
+                value="weight-loss" checked="checked">
               <label class="field-program__label" for="weight-loss">похудение</label>
             </li>
             <li class="field-program__item">
               <input class="field-program__input visually-hidden" id="weight-gain" type="radio" name="program"
-                value="weight-gain" >
+                value="weight-gain">
               <label class="field-program__label" for="weight-gain">Набор массы</label>
             </li>
             <li class="field-program__item">
               <input class="field-program__input visually-hidden" id="need-advice" type="radio" name="program"
-                value="need-advice" >
+                value="need-advice">
               <label class="field-program__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -100,7 +98,8 @@
           <ul class="field-contacts__list">
             <li class="field-contacts__item">
               <label class="field-contacts__label field-contacts__label--email" for="e-mail">E-mail:*</label>
-              <input class="field-contacts__input" placeholder="kuklachev@gmail.com" id="e-mail" type="email" name="email" required>
+              <input class="field-contacts__input" placeholder="kuklachev@gmail.com" id="e-mail" type="email"
+                name="email" required>
               <svg class="field-contacts__icon field-contacts__icon--email" width="19" height="14" fill="none"
                 stroke="#222222" xmlns="http://www.w3.org/2000/svg">
                 <use href="./img/sprite/sprite.svg#icon-email"></use>
@@ -108,7 +107,7 @@
             </li>
             <li class="field-contacts__item">
               <label class="field-contacts__label field-contacts__label--phone" for="phone">Телефон:*</label>
-              <input class="field-contacts__input" placeholder="8 (960) 900-60-90" id="phone" type="tel" name="phone" id="phone"
+              <input class="field-contacts__input" placeholder="8 (960) 900-60-90" id="phone" type="tel" name="phone"
                 required>
               <svg class="field-contacts__icon field-contacts__icon--phone" width="20" height="20" fill="#000"
                 xmlns="http://www.w3.org/2000/svg">
