@@ -31,14 +31,6 @@
   &--catalog {
     @media (min-width: $desktop-width) {
       min-height: 188px;
-
-      .logo {
-        margin-bottom: 20px;
-      }
-
-      .main-nav {
-        margin-bottom: 8px;
-      }
     }
   }
 }
