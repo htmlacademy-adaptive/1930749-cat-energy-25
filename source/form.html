@@ -99,16 +99,16 @@
         <div class="field-contacts__wrapper">
           <ul class="field-contacts__list">
             <li class="field-contacts__item">
-              <label class="field-contacts__label field-contacts__label--email">E-mail:*</label>
-              <input class="field-contacts__input" placeholder="kuklachev@gmail.com" type="email" name="email" required>
+              <label class="field-contacts__label field-contacts__label--email" for="e-mail">E-mail:*</label>
+              <input class="field-contacts__input" placeholder="kuklachev@gmail.com" id="e-mail" type="email" name="email" required>
               <svg class="field-contacts__icon field-contacts__icon--email" width="19" height="14" fill="none"
                 stroke="#222222" xmlns="http://www.w3.org/2000/svg">
                 <use href="./img/sprite/sprite.svg#icon-email"></use>
               </svg>
             </li>
             <li class="field-contacts__item">
-              <label class="field-contacts__label field-contacts__label--phone">Телефон:*</label>
-              <input class="field-contacts__input" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone"
+              <label class="field-contacts__label field-contacts__label--phone" for="phone">Телефон:*</label>
+              <input class="field-contacts__input" placeholder="8 (960) 900-60-90" id="phone" type="tel" name="phone" id="phone"
                 required>
               <svg class="field-contacts__icon field-contacts__icon--phone" width="20" height="20" fill="#000"
                 xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +175,16 @@
       </div>
     </div>
     <div class="page-footer__map map">
-      <iframe class="map__image"
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+        <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="362"
+          alt="Расположение.">
+      </picture>
+      <iframe class="map__iframe"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1650001456029!5m2!1sru!2sru"
         width="320" height="362" allowfullscreen
         title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">

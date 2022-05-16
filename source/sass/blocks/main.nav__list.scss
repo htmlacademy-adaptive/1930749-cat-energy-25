@@ -1,0 +1,86 @@
+.main-nav__list {
+  @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 66px;
+  border-top: 1px solid $tablet-border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-right: 35px;
+    min-height: 24px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+      border-bottom: none;
+    }
+
+    &--active {
+      position: relative;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 2px;
+        bottom: -8px;
+        left: 0;
+        background: $basic-green;
+      }
+    }
+
+    &--active-index {
+      &::after {
+        bottom: -10px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 30px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 2px;
+        bottom: -8px;
+        left: 0;
+      }
+    }
+
+    &--active-index {
+      &::after {
+        background: $basic-white;
+      }
+    }
+  }
+}
