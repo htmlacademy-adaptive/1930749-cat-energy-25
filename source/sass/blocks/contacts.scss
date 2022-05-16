@@ -1,0 +1,45 @@
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+  font-weight: 400;
+  margin: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 164px;
+  }
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-grey-text;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 155px;
+  }
+}

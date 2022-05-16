@@ -1,0 +1,9 @@
+.copyright__icon {
+  fill: $special-grey-link;
+}
+
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
+}

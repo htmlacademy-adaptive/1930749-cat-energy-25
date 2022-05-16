@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    padding-bottom: 0;
+  }
+}
+
+.social__item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  &:focus-visible {
+    outline: 1px solid $basic-green;
+    outline-offset: 0;
+  }
+}
+
+.social__icon {
+  fill: $special-grey-link;
+}
+
+.social__link .social__icon {
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: rgba($color: $basic-green, $alpha: 0.3);
+  }
+}

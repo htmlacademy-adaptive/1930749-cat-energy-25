@@ -1,0 +1,29 @@
+.map {
+  margin-bottom: -3px;
+}
+
+.map__image {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.map__iframe {
+  border: none;
+  width: 100%;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  &--js {
+    display: block;
+  }
+}
